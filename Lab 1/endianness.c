@@ -12,8 +12,8 @@ int main()
 		printf("Hexadecimal: 0X%X\n",hex);
 		hex1 = htons(hex);
 		printf("\nLittle Endian:\n");
-                printf("Decimal: %d\n", hex1);
-                printf("Hexadecimal: 0X%X\n",hex1);
+           printf("Decimal: %d\n", hex1);
+           printf("Hexadecimal: 0X%X\n",hex1);
 	}
 	else
 	{
