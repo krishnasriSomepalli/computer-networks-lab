@@ -4,11 +4,12 @@
 #include <string.h>
 #include<stdlib.h>
 #define SIZE 100
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
 	struct sockaddr_in servaddr, caddr;
 	int sfd, len, i, n;
-	char msg[SIZE], rec[SIZE];
+	size_t msgsize = 100;
+	char rec[SIZE], msg[SIZE];
 	if(argc != 4)
 	{
 		// 'n' indicates the number of messages
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
 	for(i = 0; i < n; i++)
 	{
 		printf(">> ");
-		scanf("%s", msg);
+		fgets(msg, SIZE, stdin);
 		if(send(sfd, msg, SIZE, 0) == -1)
 		{
 			perror("send() error");
@@ -49,7 +50,7 @@ int main(int argc, char *argv[])
 			perror("read() error");
 			exit(6);
 		}
-		printf("--Received: %s\n", rec);
+		printf("--Received: %s", rec);
 	}
 	if(close(sfd) == -1)
 	{

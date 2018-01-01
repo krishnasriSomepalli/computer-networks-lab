@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 			perror("read() error");
 			exit(7);
 		}
-		printf("--Received: %s\n", msg);
+		printf("--Received: %s", msg);
 		if(send(sfd2,&msg,100,0) == -1)
 		{
 			perror("write() error");
