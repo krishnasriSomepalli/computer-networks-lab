@@ -15,5 +15,5 @@
 5. **Lab 5: routing algorithms**
    - bellman_ford.c
    - dijkstra.c
-   - topology1.txt (input for bellman_ford.c)
-   - topology2.txt (input for dijkstra.c)
+   - topology1.txt (input for dijkstra.c)
+   - topology2.txt (input for bellman_ford.c)
