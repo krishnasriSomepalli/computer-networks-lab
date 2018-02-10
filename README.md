@@ -17,3 +17,10 @@
    - dijkstra.c
    - topology1.txt (input for dijkstra.c)
    - topology2.txt (input for bellman_ford.c)
+6. **Lab 6: packet capturing**
+   - task2.c (capture raw packets and log information of TCP, UDP and ICMP headers until keyboard interrupt)
+7. **Lab 7: packet capturing**
+   - task1.c (capture 10 Ethernet frames and display header information)
+   - task3.c (display TCP information of n packets)
+   - task4.c (display UDP information of n packets)
+   - task5.c (capture 100 packets and display count of ICMP, IGMP, TCP, UDP, and other packets)
