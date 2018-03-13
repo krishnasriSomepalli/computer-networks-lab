@@ -24,3 +24,13 @@
    - task3.c (display TCP information of n packets)
    - task4.c (display UDP information of n packets)
    - task5.c (capture 100 packets and display count of ICMP, IGMP, TCP, UDP, and other packets)
+8. **Lab 8: RPCs**
+   - date: prints current date and time
+     - client.c
+     - date.x
+     - server.c
+   - square: takes an integer and prints its square
+     - client.c
+     - server.c
+     - square.x
+     
