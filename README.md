@@ -34,4 +34,9 @@
      - server.c
      - square.x
 9. **Lab 9: RSA**
+   - client.c
    - rsa.c
+   - server.c
+10. **Lab 10: TCP Sliding Window Protocol simulation**
+    - receiver.c
+    - sender.c
